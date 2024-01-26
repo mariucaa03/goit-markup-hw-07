@@ -1,5 +1,6 @@
 .main-title {
-  padding: 188px 0;
+  /* padding: 188px 0; */
+  padding: 112px 54px;
   background-color: #2e2f42;
 }
 
@@ -19,13 +20,14 @@
 .main-text {
   color: #ffffff;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07em;
+  font-size: 36px;
+  line-height: 1.11em;
   text-align: center;
-  letter-spacing: 1.12px;
+  letter-spacing: 0.72px;
   margin: 0 auto;
   max-width: 496px;
-  padding-bottom: 48px;
+  padding-bottom: 72px;
+  text-transform: capitalize;
 }
 
 .hero-button {
@@ -50,4 +52,30 @@
 .hero-button:focus {
   color: #ffffff;
   background-color: #404bbf;
+}
+
+@media screen and (width>=768px) {
+  .main-title {
+    padding: 112px 136px;
+  }
+  .main-text {
+    font-size: 56px;
+    line-height: 1.07em;
+    letter-spacing: 1.12px;
+    text-transform: none;
+    padding-bottom: 36px;
+  }
+}
+
+@media screen and (width>=768px) {
+  .main-title {
+    padding: 188px 142px;
+  }
+  .main-text {
+    font-size: 56px;
+    line-height: 1.07em;
+    letter-spacing: 1.12px;
+    text-transform: none;
+    padding-bottom: 48px;
+  }
 }

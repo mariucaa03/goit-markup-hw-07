@@ -11,12 +11,16 @@
 
 .list-customers {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
 }
 
 .item-customers {
   width: calc((100% - 120px) / 6);
   height: 88px;
+  width: fit-content;
 }
 
 .customer {
@@ -44,4 +48,20 @@
   justify-content: center;
   align-items: center;
   margin: 16px 32px;
+}
+
+@media screen and (width>=768px) {
+  .section {
+    padding: var(--padding-vertical-global) 0;
+  }
+}
+
+@media screen and (width>=1158px) {
+  .section {
+    padding: 120px 0;
+  }
+
+  .list-customers {
+    flex-direction: row;
+  }
 }

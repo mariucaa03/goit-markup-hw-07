@@ -5,6 +5,7 @@
 
 .filter-list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
@@ -45,13 +46,14 @@
 
 .projects-list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
 }
 
 .filter-photos-list {
-  width: calc((100% - 48px) / 3);
+  /* width: calc((100% - 48px) / 3); */
   text-decoration: none;
 }
 .link-cards {
@@ -106,4 +108,26 @@
   letter-spacing: 0.02em;
   font-weight: 400;
   line-height: 1.5em;
+}
+
+@media screen and (width>=768px) {
+  .filter-list {
+    flex-direction: row;
+  }
+  .filter-photos-list {
+    width: calc((100% - 72px) / 2);
+  }
+}
+
+@media screen and (width>=1158px) {
+  .filter-list {
+    flex-direction: row;
+  }
+
+  .projects-list {
+    flex-direction: row;
+  }
+  .filter-photos-list {
+    width: calc((100% - 48px) / 3);
+  }
 }

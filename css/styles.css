@@ -28,20 +28,23 @@ ol {
   --white: #fff;
   --grey-customer: #8e8f99;
   --modal-checkbox: #404bbf;
+
+  --padding-vertical-global: 96px;
+  --padding-horizontal-global: 16px;
 }
 .section {
-  padding: 120px 0;
+  padding: var(--padding-vertical-global) var(--padding-horizontal-global);
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .list {
-  display: flex;
+  /* display: flex; */
   gap: 40px;
 }
 
@@ -99,4 +102,18 @@ ol {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+@media screen and (width>=768px) {
+  .root {
+    --padding-vertical-global: 96px;
+    --padding-horizontal-global: 0;
+  }
+}
+
+@media screen and (width>=1158px) {
+  .root {
+    --padding-vertical-global: 120px;
+    --padding-horizontal-global: 0;
+  }
 }

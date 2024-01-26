@@ -1,6 +1,6 @@
 .our-team-background {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: var(--padding-vertical-global) 82px;
 }
 
 .our-team-title {
@@ -16,11 +16,15 @@
 
 .our-team-title-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
 }
 
 .our-team-box {
   width: calc((100% - 72px) / 4);
+  width: fit-content;
 
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -82,4 +86,28 @@
 
 .logo-section-four {
   fill: var(--off-white);
+}
+
+@media screen and (width>=768px) {
+  .our-team-background {
+    padding: var(--padding-vertical-global) 108px;
+  }
+  .our-team-title-list {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .our-team-box {
+    /* width: calc((100% - 72px) / 2); */
+  }
+}
+
+@media screen and (width>=1158px) {
+  .our-team-background {
+    padding: 120px 156px;
+  }
+  .our-team-title-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
 }

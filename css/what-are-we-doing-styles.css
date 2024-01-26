@@ -1,4 +1,8 @@
 .section-what-are-we-doing {
+  display: none;
+}
+
+.section-what-are-we-doing {
   padding-bottom: 120px;
 }
 
@@ -20,4 +24,10 @@
 
 .section-two-list {
   width: calc((100% - 48px) / 3);
+}
+
+@media screen and (width>=1158px) {
+  .section-what-are-we-doing {
+    display: contents;
+  }
 }
