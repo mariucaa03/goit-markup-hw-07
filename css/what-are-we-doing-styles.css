@@ -1,0 +1,23 @@
+.section-what-are-we-doing {
+  padding-bottom: 120px;
+}
+
+.what-are-we-doing-title {
+  color: var(--navy-blue);
+  font-size: 36px;
+  font-weight: 700px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.what-are-we-doing-list {
+  display: flex;
+  gap: 24px;
+}
+
+.section-two-list {
+  width: calc((100% - 48px) / 3);
+}
