@@ -74,6 +74,14 @@
   color: #404bbf;
 }
 
+.contact {
+  font-style: normal;
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
 .address-description {
   color: #434455;
   font-size: 16px;

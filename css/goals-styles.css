@@ -8,7 +8,7 @@
 }
 
 .goals-list-two {
-  flex-basis: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 96px) / 2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,6 +49,14 @@
     column-gap: 24px; */
     flex-direction: row;
   }
+  .goals-list-two {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .goals-title {
+    align-items: self-start;
+  }
 }
 
 @media screen and (width>=1158px) {
@@ -56,6 +64,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
   }
+
   .goals-list-two {
     display: block;
   }

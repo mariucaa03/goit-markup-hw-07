@@ -5,10 +5,11 @@
 
 .filter-list {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   gap: 24px;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
 }
 
 .filter {
@@ -46,10 +47,13 @@
 
 .projects-list {
   display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
   flex-direction: column;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  width: fit-content;
 }
 
 .filter-photos-list {
@@ -113,9 +117,13 @@
 @media screen and (width>=768px) {
   .filter-list {
     flex-direction: row;
+    justify-content: center;
   }
   .filter-photos-list {
     width: calc((100% - 72px) / 2);
+  }
+  .projects-list {
+    flex-direction: row;
   }
 }
 

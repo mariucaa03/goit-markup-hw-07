@@ -20,6 +20,7 @@
   justify-content: center;
   align-items: center;
   gap: 72px;
+  flex-wrap: wrap;
 }
 
 .our-team-box {
@@ -93,6 +94,8 @@
     padding: var(--padding-vertical-global) 108px;
   }
   .our-team-title-list {
+    flex-direction: row;
+
     flex-wrap: wrap;
     gap: 24px;
   }

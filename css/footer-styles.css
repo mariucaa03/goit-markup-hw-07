@@ -7,13 +7,15 @@
 .container-footer {
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
   gap: 72px;
 }
 
 .footer-logo-and-description {
-  margin-right: 120px;
+  /* margin-right: 120px; */
+  display: grid;
+  margin-bottom: 72px;
 }
 
 .logo-part-foot {
@@ -25,7 +27,7 @@
   letter-spacing: 0.54px;
   text-transform: uppercase;
   text-decoration: none;
-  display: inline-block;
+  margin: auto;
 }
 
 .logo-foot {
@@ -49,18 +51,24 @@
   margin-top: 16px;
   /* margin-bottom: 72px; */
 }
+.footer-social-media-container {
+  display: grid;
+}
+
 .footer-social-media-paragraph {
   color: var(--white);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
+  margin: auto;
 }
 
 .footer-list {
   display: flex;
   gap: 16px;
+  margin-top: 16px;
+  justify-content: center;
 }
 
 .footer-item-social-media-list {
@@ -90,22 +98,24 @@
 
 .footer-subscribe-container {
   margin-left: 0;
+  display: grid;
 }
 
 .footer-subscribe-paragraph {
-  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white);
+  margin: auto;
 }
 
 .footer-subscribe-form {
   gap: 24px;
+  margin-top: 16px;
 }
-.footer-subscribe-label {
-}
+/* .footer-subscribe-label {
+} */
 
 .footer-subscribe-input {
   width: 264px;
@@ -119,6 +129,7 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--white);
+  margin-bottom: 16px;
 }
 
 .footer-subscribe-input::placeholder {
@@ -140,7 +151,7 @@
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
-  margin-top: 16px;
+  margin: auto;
 }
 
 .footer-subscribe-svg {
@@ -150,6 +161,23 @@
 @media screen and (width>=768px) {
   .footer {
     padding: var(--padding-vertical-global) 108px;
+  }
+
+  .footer-logo-description-social-media-container {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+  }
+  .footer-logo-and-description {
+    margin-bottom: 0;
+  }
+
+  .logo-part-foot {
+    margin: 0;
+  }
+
+  .footer-social-media-paragraph {
+    margin: 0;
   }
 }
 
@@ -166,6 +194,7 @@
 
   .footer-logo-and-description {
     margin-right: 120px;
+    margin-bottom: 0;
   }
 
   .footer-subscribe-form {
@@ -177,5 +206,9 @@
   }
   .footer-subscribe-container {
     margin-left: 80px;
+  }
+
+  .footer-subscribe-paragraph {
+    margin: 0;
   }
 }

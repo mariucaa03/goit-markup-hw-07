@@ -11,14 +11,15 @@
 
 .list-customers {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .item-customers {
-  width: calc((100% - 120px) / 6);
+  flex-basis: calc((100% - 96px) / 2);
   height: 88px;
   width: fit-content;
 }
@@ -54,6 +55,10 @@
   .section {
     padding: var(--padding-vertical-global) 0;
   }
+
+  .item-customers {
+    flex-basis: calc((100% - 96px) / 3);
+  }
 }
 
 @media screen and (width>=1158px) {
@@ -63,5 +68,6 @@
 
   .list-customers {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 }

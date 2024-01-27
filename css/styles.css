@@ -48,14 +48,6 @@ ol {
   gap: 40px;
 }
 
-.contact {
-  font-style: normal;
-  color: #757575;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
 .link {
   padding: 24px 0 24px;
   text-decoration: none;
