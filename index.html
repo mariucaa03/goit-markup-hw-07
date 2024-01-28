@@ -35,38 +35,78 @@
           <a href="./index.html" class="logo-link"
             >Web<span class="logo-part">Studio</span></a
           >
+          <button class="header-menu-button" data-menu-open>
+            <i data-feather="menu"></i>
+          </button>
 
-          <ul class="list-nav">
-            <li>
-              <a class="page-description-link" href="./index.html">Studio</a>
-            </li>
-            <li>
-              <a class="page-description-link" href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li>
-              <a class="page-description-link" href="">Contacts</a>
-            </li>
-          </ul>
+          <div class="header-menu" data-menu>
+            <button type="button" class="header-close-button" data-menu-close>
+              <svg width="8" height="8" class="modal-icon">
+                <use href="./images/icons.svg#close"></use>
+              </svg>
+            </button>
+            <ul class="list-nav">
+              <li>
+                <a class="page-description-link" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="page-description-link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="page-description-link" href="">Contacts</a>
+              </li>
+            </ul>
+            <address class="contact">
+              <ul class="list-nav list-contact">
+                <li class="hero-contact-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="address-description link hero-email"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+110001111111" class="address-description link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="header-social-media-list">
+                <li class="list-item-social-media-section-four">
+                  <a href="" class="social-media-links-section-four">
+                    <svg width="16" height="16" class="logo-section-four">
+                      <use href="./images/icons.svg#instagram" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-item-social-media-section-four">
+                  <a href="" class="social-media-links-section-four">
+                    <svg width="16" height="16" class="logo-section-four">
+                      <use href="./images/icons.svg#twitter" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-item-social-media-section-four">
+                  <a href="" class="social-media-links-section-four">
+                    <svg width="16" height="16" class="logo-section-four">
+                      <use href="./images/icons.svg#facebook" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-item-social-media-section-four">
+                  <a href="" class="social-media-links-section-four">
+                    <svg width="16" height="16" class="logo-section-four">
+                      <use href="./images/icons.svg#linkedin" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
         </nav>
-
-        <address class="contact">
-          <ul class="list-nav">
-            <li>
-              <a
-                href="mailto:info@devstudio.com"
-                class="address-description link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+110001111111" class="address-description link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
       </div>
     </header>
 
@@ -406,6 +446,7 @@
         <div class="footer-logo-description-social-media-container">
           <div class="footer-logo-and-description">
             <!-- am pus margin bottom pe clasa pt tableta -->
+
             <a href="./index.html" class="logo-part-foot"
               >WEB<span class="logo-foot">Studio</span></a
             >
@@ -557,5 +598,10 @@
       </div>
     </div>
     <script type="text/javascript" src="./modal/modal.js"></script>
+    <script type="text/javascript" src="./menu/menu.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

@@ -13,7 +13,6 @@
 }
 
 .footer-logo-and-description {
-  /* margin-right: 120px; */
   display: grid;
   margin-bottom: 72px;
 }
@@ -129,7 +128,7 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--white);
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 .footer-subscribe-input::placeholder {
@@ -179,6 +178,20 @@
   .footer-social-media-paragraph {
     margin: 0;
   }
+
+  .footer-subscribe-container {
+    display: block;
+    align-self: baseline;
+    margin-left: 15px;
+  }
+
+  .footer-subscribe-paragraph {
+    margin: 0;
+  }
+
+  .footer-subscribe-form {
+    display: flex;
+  }
 }
 
 @media screen and (width>=1158px) {
@@ -211,4 +224,9 @@
   .footer-subscribe-paragraph {
     margin: 0;
   }
+
+  /* .footer-social-media-container {
+    display: block;
+    align-self: center;
+  } */
 }

@@ -5,15 +5,17 @@
 }
 
 .container-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 70px;
+  display: block;
+  align-content: center;
+  /* justify-content: space-between;
+  align-items: center; */
 }
 
-.logo-nav {
+/* .logo-nav {
   display: flex;
   align-items: center;
-}
+} */
 
 .logo-link {
   font-family: "Raleway", sans-serif;
@@ -37,17 +39,13 @@
   color: #2e2f42;
 }
 
-.list-nav {
-  display: none;
-  gap: 40px;
-}
 .page-description-link {
   color: #2e2f42;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  letter-spacing: 0.32px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11em;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
   display: inline-block;
   padding: 24px 0;
   text-decoration: none;
@@ -84,24 +82,179 @@
 
 .address-description {
   color: #434455;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.32px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (width>=768px) {
+.header-menu-button {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.list-nav {
+  display: flex;
+  gap: 40px;
+}
+
+@media screen and (width < 768px) {
+  .header-menu {
+    visibility: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 80px 40px 40px 40px;
+  }
+
   .list-nav {
     display: flex;
+    flex-direction: column;
     gap: 40px;
+  }
+
+  .list-contact {
+    flex-direction: column-reverse;
+    gap: 0;
+    margin-top: 150px;
+  }
+  .hero-email {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    text-transform: lowercase;
+  }
+
+  .header-social-media-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 56px;
+    margin-top: 48px;
+  }
+
+  .header-close-button {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
 @media screen and (width>=768px) {
+  .logo-part {
+    margin-top: 25px;
+  }
+
+  .logo-nav {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+  }
+
+  .header-close-button {
+    display: none;
+  }
+  .header-menu {
+    display: flex;
+  }
+
   .list-nav {
     display: flex;
     gap: 40px;
+  }
+
+  .address-description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+    text-transform: lowercase;
+  }
+
+  .hero-contact-item {
+    height: 35px;
+  }
+
+  .contact {
+    display: flex;
+
+    margin-left: 121px;
+  }
+
+  .list-contact {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .page-description-link {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    letter-spacing: 0.32px;
+  }
+
+  .address-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+  }
+
+  .header-social-media-list {
+    display: none;
+  }
+  .header-menu-button {
+    display: none;
+  }
+}
+
+@media screen and (width>=1158px) {
+  .header-close-button {
+    display: none;
+  }
+
+  .list-nav {
+    display: flex;
+    gap: 40px;
+  }
+
+  .address-description {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .list-contact {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .contact {
+    margin-left: 332px;
   }
 }
